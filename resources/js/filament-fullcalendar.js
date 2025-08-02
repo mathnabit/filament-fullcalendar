@@ -28,6 +28,7 @@ export default function fullcalendar({
     eventContent,
     eventDidMount,
     eventWillUnmount,
+    dayCellContent,
 }) {
     return {
         init() {
@@ -50,6 +51,7 @@ export default function fullcalendar({
                 eventContent,
                 eventDidMount,
                 eventWillUnmount,
+                dayCellContent,
                 events: (info, successCallback, failureCallback) => {
                     this.$wire.fetchEvents({ start: info.startStr, end: info.endStr, timezone: info.timeZone })
                         .then(successCallback)

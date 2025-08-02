@@ -61,4 +61,18 @@ trait InteractsWithRawJS
             null
         JS;
     }
+
+    /**
+     * Generated content is inserted inside the inner-most wrapper of the day cell.
+     *
+     * @see https://fullcalendar.io/docs/day-cell-render-hooks
+     *
+     * @return string
+     */
+    public function dayCellContent(): string
+    {
+        return <<<JS
+            null
+        JS;
+    }
 }
