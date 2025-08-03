@@ -75,4 +75,19 @@ trait InteractsWithRawJS
             null
         JS;
     }
+
+    /**
+     * Called right after the <td> has been added to the DOM.
+     *
+     * @see https://fullcalendar.io/docs/day-cell-render-hooks
+     *
+     * @return string
+     */
+    public function dayCellDidMount(): string
+    {
+        return <<<JS
+            null
+        JS;
+    }
+
 }
