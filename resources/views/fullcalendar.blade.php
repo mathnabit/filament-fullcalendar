@@ -25,6 +25,7 @@
                 eventWillUnmount: {!! htmlspecialchars($this->eventWillUnmount(), ENT_COMPAT) !!},
                 dayCellContent: {!! htmlspecialchars($this->dayCellContent(), ENT_COMPAT) !!},
                 dayCellDidMount: {!! htmlspecialchars($this->dayCellDidMount(), ENT_COMPAT) !!},
+                viewDidMount: {!! htmlspecialchars($this->viewDidMount(), ENT_COMPAT) !!},
             })">
         </div>
     </x-filament::section>

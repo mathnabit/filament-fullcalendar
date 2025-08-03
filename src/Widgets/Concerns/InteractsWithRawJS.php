@@ -90,4 +90,18 @@ trait InteractsWithRawJS
         JS;
     }
 
+    /**
+     * Called right after the view has been added to the DOM.
+     *
+     * @see https://fullcalendar.io/docs/day-cell-render-hooks
+     *
+     * @return string
+     */
+    public function viewDidMount(): string
+    {
+        return <<<JS
+            null
+        JS;
+    }
+
 }
