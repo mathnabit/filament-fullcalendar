@@ -31,6 +31,7 @@ export default function fullcalendar({
     dayCellContent,
     dayCellDidMount,
     viewDidMount,
+    datesSet,
 }) {
     return {
         init() {
@@ -56,6 +57,7 @@ export default function fullcalendar({
                 dayCellContent,
                 dayCellDidMount,
                 viewDidMount,
+                datesSet,
                 events: (info, successCallback, failureCallback) => {
                     this.$wire.fetchEvents({ start: info.startStr, end: info.endStr, timezone: info.timeZone })
                         .then(successCallback)
